@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header img{
+    width: 200px;
+    height: 200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #dae5e8;
+    border: 1.5px solid #48453c;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+.guias {
+    color: #48453c;
+    font-size: 18px;
+}
+
+.logofooter {
+    width: 250px;
+}
+
+.imgredes {
+    width: 40px;
+    height: 40px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2e3237;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
