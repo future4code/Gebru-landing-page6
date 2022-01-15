@@ -1,0 +1,132 @@
+/* Estilização da página inteira */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Tamanho do logo no cabeçalho */
+header img{              
+    width: 200px;
+    height: 200px;
+}
+
+/* Cabeçalho do site */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #dae5e8;
+    border: 1.5px solid #48453c;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+/* Coloração da guias de seções do cabeçalho */
+.guias {
+    color: #48453c;
+    font-size: 18px;
+}
+
+/* Cor das guias quando o mouse é passado em cima */
+.guias:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Cor das guias quando o botão é clicado */
+.guias:active {
+    color:#ad9d9d;
+}
+
+/* Parte principal do site, a parte do meio */
+main {
+    display: grid;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    background-color: #f2f2f2;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    font-size: 15px;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #48453c;
+}
+
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    display: flex;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    background-color: #ececec;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    background-color: #ffffff;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    justify-content: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+    cursor: pointer;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #48453c;
+    font-weight: bold;
+}
+
+/* Tamanho do logo no rodapé do site */
+.logofooter {
+    width: 250px;
+}
+
+/* Tamanho do logo das redes sociais no rodapé do site */
+.imgredes {
+    width: 40px;
+    height: 40px;
+}
+
+/* Rodapé do site */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2e3237;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
