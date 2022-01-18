@@ -71,8 +71,7 @@ input, textarea {
     color: black;
     margin-left: 20px;
     margin-top: 10px;
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 5px;
+    border-radius: 7px;
     border: 1px solid;
     display: flex;
 }
