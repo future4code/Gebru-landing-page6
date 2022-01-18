@@ -22,6 +22,14 @@ header {
     width: 100%;
 }
 
+.guias:hover {
+    color: rgb(255, 255, 255);
+}
+
+.guias:active {
+    color:#ad9d9d;
+}
+
 .guias {
     color: #48453c;
     font-size: 18px;
@@ -41,6 +49,7 @@ header {
     padding-top: 40vh;
     font-size: 20px;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .formulario{
