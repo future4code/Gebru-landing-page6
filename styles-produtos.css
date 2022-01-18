@@ -1,0 +1,109 @@
+ /* Estilização da página inteira */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Tamanho do logo no cabeçalho */
+header img{
+    width: 200px;
+    height: 200px;
+}
+
+/* Cabeçalho do site */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #dae5e8;
+    border: 1.5px solid #48453c;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+/* Coloração da guias de seções do cabeçalho */
+.guias {
+    color: #48453c;
+    font-size: 18px;
+}
+
+/* Cor das guias quando o mouse é passado em cima */
+.guias:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Cor das guias quando o botão é clicado */
+.guias:active {
+    color:#ad9d9d;
+}
+
+/* Parte principal do site, a parte do meio */
+main {
+    display: grid;
+    padding: 225px 10px 10px 30px;
+}
+
+/* Parte para ajustar as imagens lado a lado */
+.produtos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+/* Borda das imagens */
+.produto{
+    margin-bottom: 20px;
+    border:1px solid rgb(177, 174, 174);  
+}
+
+/* Ajuste do cabeçalho do nome "PRODUTO" */
+main h2{
+    margin: 0px 15px 0px 15px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 25px;
+    font-size: 50px;
+    color: #48453c;
+    background-image: 
+    linear-gradient(to left, #d7d6dbde, #f4f4f6);
+}
+
+/* Etilização dos paragrafos */
+.produto p{
+    color: #48453c;
+    padding: 5px 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: 
+    linear-gradient(to top, #d7d6dbde, #f4f4f6);
+}
+
+/* Tamanho do logo no rodapé do site */
+.logofooter {
+    width: 250px;
+}
+
+/* Tamanho do logo das redes sociais no rodapé do site */
+.imgredes {
+    width: 40px;
+    height: 40px;
+}
+
+/* Rodapé do site */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2e3237;
+    
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
