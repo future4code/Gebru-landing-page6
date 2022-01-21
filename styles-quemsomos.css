@@ -4,11 +4,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header img{
-    width: 200px;
-    height: 200px;
-}
-
+/* cabecalho */
 header {
     display: flex;
     justify-content: space-evenly;
@@ -22,35 +18,38 @@ header {
     width: 100%;
 }
 
+/* tamanho imagem do Cabecalho */
+
+header img{
+    width: 200px;
+    height: 200px;
+}
+
+
+/* cores das guias ao passar mouse */
 .guias:hover {
     color: rgb(255, 255, 255);
 }
-
+/* cores das guias ao clicar  */
 .guias:active {
     color:#ad9d9d;
 }
 
+/* cor das guias é tamanho */
 .guias {
     color: #48453c;
     font-size: 18px;
 }
 
-.logofooter {
-    width: 250px;
-}
-
-.imgredes {
-    width: 40px;
-    height: 40px;
-}
-
-
+/* texto quem somos */
 .texto {
     padding-top: 40vh;
     font-size: 20px;
     padding-bottom: 50px;
     text-align: center;
 }
+
+/* Formulario email */
 
 .formulario{
     text-align: center;
@@ -67,7 +66,8 @@ header {
     width: 110px; 
     height: 30px;
 }
-
+ 
+/*  Rodape  */
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -76,4 +76,131 @@ footer {
     position: relative;
     width: 100%;
     color: white;
+}
+
+/* logo rodape */
+.logofooter {
+    width: 250px;
+}
+
+/* imagens redes sociais */
+
+.imgredes {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Responsividade smartphones*/
+@media screen and (min-device-width : 200px) and (max-device-width : 480px) {
+    header {
+        display: flex;
+        flex-flow: column;
+        width: 100vw;
+    }
+
+    header img {
+        width: 200px;
+        height: 200px; 
+    }
+
+    .guias {
+        font-size: 17px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding-top: 20%;
+    }
+
+    main h2 {
+        font-size: 28px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    main button {
+        font-size: 17px;
+        padding: 8px;
+    }
+
+    .imgmain {
+        width: 300px;
+        height: 300px;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    .logofooter {
+        height: 200px;
+        width: 200px;
+    }
+
+    .textofooter {
+        margin-bottom: 20px;
+    }
+
+    }
+
+/* Responsividade tablets*/
+@media screen and (min-device-width : 481px) and (max-device-width : 950px) {
+    header {
+        display: flex;
+        flex-flow: row;
+        width: 100vw;
+    }
+
+    header img {
+        width: 250px;
+        height: 250px; 
+    }
+
+    .guias {
+        font-size: 22px;
+        margin: 0px 0px 20px 0px;
+    }
+
+   main {
+       display: inline-block;
+       width: 100vw;
+   }
+
+    main h2 {
+        font-size: 40px;
+    }
+
+    main p {
+        font-size: 25px;
+    }
+
+    main button {
+        font-size: 20px;
+      
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .logofooter {
+        height: 200px;
+        width: 200px;
+    }
+
+    .textofooter {
+        font-size: 18px;
+    }
+    .texto{
+        margin: -15% 0 0 0;
+  }
 }
