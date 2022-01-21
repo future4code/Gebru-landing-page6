@@ -1,0 +1,232 @@
+/* Estilização da página inteira */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Tamanho do logo no cabeçalho */
+header img{              
+    width: 200px;
+    height: 200px;
+}
+
+/* Cabeçalho do site */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #dae5e8;
+    border: 1.5px solid #48453c;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+/* Coloração da guias de seções do cabeçalho */
+.guias {
+    color: #48453c;
+    font-size: 18px;
+}
+
+/* Cor das guias quando o mouse é passado em cima */
+.guias:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* Cor das guias quando o botão é clicado */
+.guias:active {
+    color:#ad9d9d;
+}
+
+/* Parte principal do site, a parte do meio */
+main {
+    display: grid;
+    grid-template-columns: 100vh 1fr 2fr;
+    padding-top: 250px;
+    padding-bottom: 100px;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Tamanho e cor da fonte do texto de boas-vindas */
+main h2 {
+    font-size: 40px; 
+    color: #48453c;
+}
+
+/* Tamanho e cor da fonte da introdução abaixo do texto de boas-vindas */
+main p {
+    font-size: 20px;
+    color: #48453c;
+}
+
+/* Botão Conheça melhor os nossos produtos */
+main button {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 15px;
+    border: 0px;
+    padding: 10px;
+    cursor: pointer;
+    background-image: 
+    linear-gradient(to left, #1d1d1d, #67b9c7);
+}
+
+
+/* Coloração da fonte quando o mouse é passado em cima do botão Conheça melhor os nossos produtos */
+main button:hover {
+    color:#dae5e8;
+}
+
+/* Coloração da fonte quando o botão Conheça melhor os nossos produtos é clicado */
+main button:active {
+    color: #ad9d9d;
+}
+
+/* Tamanho da imagem do sapato que está na página principal */
+.imgmain {
+    width: 400px;
+    height: 400px;
+}
+
+/* Tamanho do logo no rodapé do site */
+.logofooter {
+    width: 250px;
+}
+
+/* Tamanho do logo das redes sociais no rodapé do site */
+.imgredes {
+    width: 40px;
+    height: 40px;
+}
+
+/* Rodapé do site */
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2e3237;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+/* Responsividade smartphones*/
+    @media screen and (min-device-width : 200px) and (max-device-width : 480px) {
+        header {
+            display: flex;
+            flex-flow: column;
+            width: 100vw;
+        }
+
+        header img {
+            width: 200px;
+            height: 200px; 
+        }
+
+        .guias {
+            font-size: 17px;
+            margin: 0px 0px 20px 0px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            padding-top: 100%;
+        }
+
+        main h2 {
+            font-size: 28px;
+        }
+
+        main p {
+            font-size: 18px;
+        }
+
+        main button {
+            font-size: 17px;
+            padding: 8px;
+        }
+
+        .imgmain {
+            width: 300px;
+            height: 300px;
+        }
+
+        footer {
+            display: block;
+            text-align: center;
+        }
+
+        .logofooter {
+            height: 200px;
+            width: 200px;
+        }
+
+        .textofooter {
+            margin-bottom: 20px;
+        }
+
+        }
+  
+/* Responsividade tablets*/
+    @media screen and (min-device-width : 481px) and (max-device-width : 950px) {
+        header {
+            display: flex;
+            flex-flow: row;
+            width: 100vw;
+        }
+    
+        header img {
+            width: 250px;
+            height: 250px; 
+        }
+    
+        .guias {
+            font-size: 22px;
+            margin: 0px 0px 20px 0px;
+        }
+    
+       main {
+           display: inline-block;
+           width: 100vw;
+           padding-top: 40%;
+       }
+
+        main h2 {
+            font-size: 40px;
+        }
+
+        main p {
+            font-size: 25px;
+        }
+
+        main button {
+            font-size: 23px;
+            padding: 10px;
+        }
+    
+        footer {
+            display: flex;
+            align-items: center;
+            width: 100vw;
+        }
+    
+        .logofooter {
+            height: 200px;
+            width: 200px;
+        }
+    
+        .textofooter {
+            font-size: 18px;
+        }
+    }
+   
