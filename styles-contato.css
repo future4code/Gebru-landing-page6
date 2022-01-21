@@ -136,3 +136,133 @@ footer {
     width: 100%;
     color: white;
 }
+
+/* Responsividade smartphones*/
+@media screen and (min-device-width : 200px) and (max-device-width : 480px) {
+    header {
+        display: flex;
+        flex-flow: column;
+        width: 100vw;
+    }
+
+    header img {
+        width: 200px;
+        height: 200px; 
+    }
+
+    .guias {
+        font-size: 17px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding-top: 100%;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    input, textarea {
+        width: 280px;
+        padding: 10px;
+        color: black;
+        margin-left: 20px;
+        margin-top: 10px;
+        border-radius: 7px;
+        border: 1px solid;
+        display: flex;
+    }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    .logofooter {
+        height: 200px;
+        width: 200px;
+    }
+
+    .textofooter {
+        margin-bottom: 20px;
+    }
+
+    }
+
+/* Responsividade tablets*/
+@media screen and (min-device-width : 481px) and (max-device-width : 950px) {
+    header {
+        display: flex;
+        flex-flow: row;
+        width: 100vw;
+    }
+
+    header img {
+        width: 250px;
+        height: 250px; 
+    }
+
+    .guias {
+        font-size: 22px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding-top: 50%;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    input, textarea {
+        width: 400px;
+        padding: 10px;
+        color: black;
+        margin-left: 20px;
+        margin-top: 10px;
+        border-radius: 7px;
+        border: 1px solid;
+        display: flex;
+        font-size: 17px;
+    }
+
+    form {
+        font-size: 20px;
+    }
+
+    form input {
+        font-size: 17px;
+    }
+
+    textarea {
+        width: 800px;
+        height: 120px;
+        line-height: 20px;
+        max-width: 400px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .logofooter {
+        height: 200px;
+        width: 200px;
+    }
+
+    .textofooter {
+        font-size: 18px;
+    }
+}

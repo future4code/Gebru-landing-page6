@@ -78,6 +78,7 @@ main button {
     linear-gradient(to left, #1d1d1d, #67b9c7);
 }
 
+
 /* Coloração da fonte quando o mouse é passado em cima do botão Conheça melhor os nossos produtos */
 main button:hover {
     color:#dae5e8;
@@ -116,3 +117,116 @@ footer {
     width: 100%;
     color: white;
 }
+
+/* Responsividade smartphones*/
+    @media screen and (min-device-width : 200px) and (max-device-width : 480px) {
+        header {
+            display: flex;
+            flex-flow: column;
+            width: 100vw;
+        }
+
+        header img {
+            width: 200px;
+            height: 200px; 
+        }
+
+        .guias {
+            font-size: 17px;
+            margin: 0px 0px 20px 0px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            padding-top: 100%;
+        }
+
+        main h2 {
+            font-size: 28px;
+        }
+
+        main p {
+            font-size: 18px;
+        }
+
+        main button {
+            font-size: 17px;
+            padding: 8px;
+        }
+
+        .imgmain {
+            width: 300px;
+            height: 300px;
+        }
+
+        footer {
+            display: block;
+            text-align: center;
+        }
+
+        .logofooter {
+            height: 200px;
+            width: 200px;
+        }
+
+        .textofooter {
+            margin-bottom: 20px;
+        }
+
+        }
+  
+/* Responsividade tablets*/
+    @media screen and (min-device-width : 481px) and (max-device-width : 950px) {
+        header {
+            display: flex;
+            flex-flow: row;
+            width: 100vw;
+        }
+    
+        header img {
+            width: 250px;
+            height: 250px; 
+        }
+    
+        .guias {
+            font-size: 22px;
+            margin: 0px 0px 20px 0px;
+        }
+    
+       main {
+           display: inline-block;
+           width: 100vw;
+           padding-top: 40%;
+       }
+
+        main h2 {
+            font-size: 40px;
+        }
+
+        main p {
+            font-size: 25px;
+        }
+
+        main button {
+            font-size: 23px;
+            padding: 10px;
+        }
+    
+        footer {
+            display: flex;
+            align-items: center;
+            width: 100vw;
+        }
+    
+        .logofooter {
+            height: 200px;
+            width: 200px;
+        }
+    
+        .textofooter {
+            font-size: 18px;
+        }
+    }
+   
