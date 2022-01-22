@@ -66,6 +66,8 @@ header img{
     width: 110px; 
     height: 30px;
 }
+
+
  
 /*  Rodape  */
 footer {
@@ -113,15 +115,16 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100vw;
-        padding-top: 20%;
     }
+    
 
     main h2 {
         font-size: 28px;
     }
 
     main p {
-        font-size: 18px;
+        font-size: 20px;
+        padding: 0px 10px 0px 10px;
     }
 
     main button {
@@ -147,6 +150,11 @@ footer {
     .textofooter {
         margin-bottom: 20px;
     }
+
+    footer p {
+    font-size: 17px;
+    }
+
 
     }
 
@@ -179,6 +187,7 @@ footer {
 
     main p {
         font-size: 25px;
+        padding: 0px 20px 0px 20px;
     }
 
     main button {
@@ -190,6 +199,7 @@ footer {
         display: flex;
         align-items: center;
         width: 100vw;
+        
     }
 
     .logofooter {
@@ -198,6 +208,15 @@ footer {
     }
 
     .textofooter {
+        font-size: 18px;
+    }
+
+    #nameendereco {
+        padding-left: 20px;
+    }
+
+
+    footer p {
         font-size: 18px;
     }
     .texto{
